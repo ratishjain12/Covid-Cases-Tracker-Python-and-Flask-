@@ -1,0 +1,43 @@
+{% extends 'base.html'%}
+
+
+
+
+{% block content %}
+<div class="container">
+	<div class="Header">
+		<h1>Covid Tracker</h1>
+	</div>
+<div class="cards">
+	
+	<div class="card card-red">
+		
+		<h1>Total cases</h1>
+		<h2>{{data_json.confirmed_cases}}</h2>
+		
+		
+	</div>
+	<div class="card card-green">
+		<h1>Total Recovered</h1>
+		<h2>{{data_json.recovered}}</h2>
+	</div>
+	<div class="card card-yellow">
+		<h1>Date</h1>
+		<h2>{{data_json.date}}</h2>
+	</div>
+	
+</div>
+
+
+
+
+</div>
+	
+
+</div>
+
+
+
+
+
+{% endblock %}
